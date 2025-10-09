@@ -75,7 +75,83 @@ encryption-simulator/
 
 ### To-dos
 
-- [ ] Create des_tables.py with all DES permutation tables and S-boxes
-- [ ] Implement des_2round.py with key scheduling and round functions
-- [ ] Create main.py with input handling and output display
-- [ ] Add README.md with usage instructions and examples
+- [x] Create des_tables.py with all DES permutation tables and S-boxes
+- [x] Implement des_2round.py with key scheduling and round functions
+- [x] Create main.py with input handling and output display
+- [x] Add README.md with usage instructions and examples
+- [x] **BONUS:** Create verify_des.py for comprehensive testing
+- [x] **BONUS:** Verify implementation (9/9 tests passed - 100%)
+
+## ✅ IMPLEMENTATION COMPLETE
+
+### All Files Created Successfully
+
+1. ✓ `des_tables.py` - All DES constants and permutation tables
+2. ✓ `des_2round.py` - Complete 2-round DES implementation
+3. ✓ `main.py` - Main program with all 3 parts (i, ii, iii)
+4. ✓ `README.md` - Comprehensive documentation
+5. ✓ `verify_des.py` - Verification test suite
+6. ✓ `VERIFICATION_REPORT.md` - Detailed test results
+7. ✓ `QUICKSTART.md` - Quick reference guide
+
+### Implementation Verified ✓
+
+**Verification Results: 9/9 Tests Passed (100%)**
+
+All DES components verified against specifications:
+- ✓ Initial/Final Permutations (IP/FP)
+- ✓ Expansion table (E)
+- ✓ All 8 S-boxes
+- ✓ P permutation
+- ✓ Key schedule (K1, K2)
+- ✓ Feistel function
+- ✓ Complete encryption
+
+### Assignment Results
+
+**Part i:**   `8BD38C82166386FD`  
+**Part ii:**  `1FD3CD921763C2FD`  
+**Part iii:** `C6D34FA70567D3BD`
+
+Avalanche effect successfully demonstrated (14-31% bits changed with 1-bit input change).
+
+### How to Run
+
+```bash
+cd /Users/corrincourville/Documents/development/encryption-simulator
+python3 main.py
+```
+
+**Status: READY FOR SUBMISSION ✓**
+
+---
+
+## ✅ AES IMPLEMENTATION COMPLETE
+
+### AES Assignment Files
+
+1. ✓ `aes_tables.py` - AES S-box and MixColumns constants
+2. ✓ `aes_operations.py` - All AES transformations (SubBytes, ShiftRows, MixColumns, AddRoundKey)
+3. ✓ `aes_calculator.py` - Complete AES round calculator
+4. ✓ `AES_ASSIGNMENT_RESULTS.md` - Detailed results document
+
+### AES Assignment Results
+
+**Final Output:** `81F6DB7F314F574CC11CC8C825CBADBB`
+
+All AES transformation steps computed:
+- ✓ Step a: Binary to Hex conversion → `2B7083132258F9EB4079389ACFA0CE9F`
+- ✓ Step b: 4×4 State Matrix (column-major order)
+- ✓ Step c: SubBytes transformation → `F151EC7D936A99E909B607B88AE08BDB`
+- ✓ Step d: ShiftRows transformation → `F16A07DB93B68B7D09E0ECE98A5199B8`
+- ✓ Step e: MixColumns (GF(2^8)) → `9BF7E3C80A1FAF692C140ADEDD202126`
+- ✓ Step f: AddRoundKey → `81F6DB7F314F574CC11CC8C825CBADBB`
+
+### How to Run AES Calculator
+
+```bash
+cd /Users/corrincourville/Documents/development/encryption-simulator
+python3 aes_calculator.py
+```
+
+**Status: AES ASSIGNMENT READY FOR SUBMISSION ✓**

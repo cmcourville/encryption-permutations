@@ -1,0 +1,16 @@
+CS 578 Assignment #2
+
+1.	DES
+i.	64 bits DES input and 56-bit key are given. Apply two rounds reduced DES and find the related ciphertext. You can find the related permutation tables and S-boxes from the lecture notes or DES Standardization document (shared on Canvas - DES-fips46-3.pdf).
+ii.	Use the same DES key from part I and use the input below (only the red bit is different) and solve part I again. Compare the output differences from part i and part ii.
+iii.	Use the same DES key from part I and use the input below (only the red bit is different) and solve part I again. Compare the output differences from part i, part ii and part iii.
+2.	AES 
+Compute the given steps below. You can use AES specification for more explanation. Show your work and present the results on a table to make it easy to follow.
+i.	
+a.	Convert the given 128-bit input to Hexadecimal form.
+b.	Write the input in a state diagram (4 by 4 matrix). Hint: pay attention to the order when converting to a table.
+c.	Apply SubBytes Step: use AES S-box to substitute the input.
+d.	Apply ShiftRows Step.
+e.	Apply Mixcolumns Step: use Irreducible polynomial 𝑃(𝑥) = 𝑥8 + 𝑥4 + 𝑥3 + 𝑥 + 1. Hint: You can use shift and XOR approach explained in class if you do not want to use finite field arithmetic.
+f.	Apply AddRoundKey Step: Generate and use round keys.
+ii.	Solve part i with the following input and the same round key. Compare the output bits.
